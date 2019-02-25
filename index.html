@@ -137,6 +137,127 @@
       
     </section>
     <!-- akhir service -->
+    <!-- portfolio -->
+    <div class="container">
+      <h3 class="light center grey-text text-darken-3">Portfolio</h3>
+      <div class="row">
+        <div class="col m3 s12">
+          <img src="img/portfolio/1.png" class="responsive-img materialboxed">
+        </div>
+        <div class="col m3 s12">
+          <img src="img/portfolio/2.png"class="responsive-img materialboxed">
+        </div>
+        <div class="col m3 s12">
+          <img src="img/portfolio/3.png"class="responsive-img materialboxed">
+        </div>
+        <div class="col m3 s12">
+          <img src="img/portfolio/4.png"class="responsive-img materialboxed">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col m3 s12">
+          <img src="img/portfolio/1.png" class="responsive-img materialboxed">
+        </div>
+        <div class="col m3 s12">
+          <img src="img/portfolio/2.png"class="responsive-img materialboxed">
+        </div>
+        <div class="col m3 s12">
+          <img src="img/portfolio/3.png"class="responsive-img materialboxed">
+        </div>
+        <div class="col m3 s12">
+          <img src="img/portfolio/4.png"class="responsive-img materialboxed">
+        </div>
+      </div>
+    </div>
+    <!-- akhir portfolio -->
+    <!-- mulai contact -->
+    <section>
+      <div class="container">
+        <h3 class="light text-grey text-darken-3 center">Contact Us</h3>
+        <div class="row">
+          <div class="col m5 s12">
+            <div class="card center blue darken-1">
+              <div class="card-content white-text">
+                <i class="medium material-icons">email</i>
+                <span class="card-title">Contact</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae numquam est sapiente rem doloremque, illum repellendus fugiat architecto, nesciunt odio accusantium culpa voluptatum labore illo aperiam quia nisi distinctio reiciendis.</p>
+              </div>
+            </div>
+            <ul class="collection">
+              <li class="collection-item"><h2>Our Office</h2></li>
+              <li class="collection-item">Cikarang Developer</li>
+              <li class="collection-item">Jl.Gading Blok C 31 / 17 , Cikarang Bekasi</li>
+              <li class="collection-item">West Java,Indonesia</li>
+            </ul>
+          </div>
+          <div class="col m7 s12">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="first_name" type="text" class="validate">
+                  <label for="first_name">Nama Depan</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Nama Belakang</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">phone</i>
+                  <input id="number" type="number" class="validate">
+                  <label for="number">No Telepon</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">mode_edit</i>
+                  <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+                  <label for="textarea2">Pesan</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <button class="btn waves-effect waves-light" type="submit" name="action">Kirim
+                  <i class="material-icons right">send</i>
+                  </button>
+                  
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <footer class="page-footer blue darken-2">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        &copy;CikarangDev 2019
+          <a class="grey-text text-lighten-4 right" href="https://instagram.com/aprieyyadii" target="_blank">Selengkapnya</a>
+        </div>
+      </div>
+    </footer>
+    <!-- akhir contact -->
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
@@ -156,6 +277,10 @@
     document.addEventListener('DOMContentLoaded', function() {
     var ourclient = document.querySelectorAll('.parallax');
     M.Parallax.init(ourclient);
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+    var portfolio = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(portfolio);
     });
     </script>
   </body>
